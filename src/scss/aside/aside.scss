@@ -1,0 +1,132 @@
+.aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    background-color: $bgHeader;
+    z-index: 3;
+    transition: all 1s linear;
+    transform: translateX(-20rem);
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    &--active {
+        transform: translateX(0);
+    }
+    &__inner-wrapper {
+        margin: 0 1.25rem;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.125rem;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    // &__btn {}
+    // &__btn--visibility {}
+    // &__img-btn {}
+    // &__logo-img {}
+    &__list {
+        margin-top: 2.1875rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+        position: relative;
+    }
+    &__list-item {
+        &--active {
+            &:before {
+                content: "";
+                position: absolute;
+                border-left: 0.25rem solid #41f6d7;
+                border-radius: 0 0.25rem 0.25rem 0;
+                height: 2rem;
+                left: -1.25rem;
+                top: -0.1875rem;
+            }
+        }
+    }
+    &__list-link {
+        display: block;
+        max-width: 100%;
+        font-family: TT Lakes;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: -0.0125rem;
+        color: $text;
+        font-weight: 500;
+        &--gray {
+            color: #7E7E82;
+        }
+    }
+    &__list-btn {
+        margin-top: 16.75rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    // &__list-btn-item {}
+    &__link-mail {
+        font-family: TT Lakes;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: -0.0125rem;
+        color: $text;
+        font-weight: 500;
+    }
+    &__link-contact {
+        font-family: TT Lakes;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        /* identical to box height, or 133% */
+        letter-spacing: -0.0375rem;
+        color: $text;
+        font-weight: 700;
+    }
+    &__container--indent {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    &__list-lang {
+        margin-top: 2.5rem;
+        display: flex;
+        gap: 0.4375rem;
+    }
+    // &__lang-item {}
+    &__list-lang-link {
+        font-family: TT Lakes;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        /* identical to box height, or 150% */
+        letter-spacing: -0.0125rem;
+        color: $text;
+        font-weight: 500;
+        transition: all 2s linear;
+        &:hover {
+            color: #7E7E82;
+        }
+    }
+    @media (min-width: 90rem) {
+        &__btn--visibility {
+            display: none;
+        }
+        transform: translateX(0);
+        box-shadow: none;
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+        &__list-btn {
+            margin-top: 2rem;
+        }
+        &__list-lang {
+            margin-top: 0.5rem;
+        }
+    }
+}

@@ -1,14 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CPS Homework</title>
 </head>
+
 <body>
-<img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-<h3>Welcome to Webpack 4 starter </h3>
+    <div class="overlay"></div>
+    <aside class="aside">
+        <div class=" aside__inner-wrapper ">
+            <div class="aside__header ">
+                <div class="aside__container ">
+                    <button class="aside__btn aside__btn--visibility ">
+              <img src="./img/ic/close.svg" alt=" " class="aside__img-btn " /></button
+            ><img src="./img/Group.svg " alt=" " class="aside__logo-img " />
+          </div>
+          <button class="aside__btn ">
+            <img src="./img/ic/search.svg" alt=" " class="aside__img-btn " />
+          </button>
+                </div>
+                <ul class="aside__list ">
+                    <li class="aside__list-item aside__list-item--active">
+                        <a href="# " class="aside__list-link aside__list-link--gray">Ремонт техники</a>
+                    </li>
+                    <li class="aside__list-item ">
+                        <a href="# " class="aside__list-link ">Услуги и сервисы</a>
+                    </li>
+                    <li class="aside__list-item ">
+                        <a href="# " class="aside__list-link ">Корпоративным клиентам</a>
+                    </li>
+                    <li class="aside__list-item ">
+                        <a href="# " class="aside__list-link ">Продавцам техники</a>
+                    </li>
+                    <li class="aside__list-item ">
+                        <a href="# " class="aside__list-link ">Партнерам</a>
+                    </li>
+                    <li class="aside__list-item ">
+                        <a href="# " class="aside__list-link ">Производителям</a>
+                    </li>
+                    <li class="aside__list-item ">
+                        <a href="# " class="aside__list-link ">Наши сервисные центры</a>
+                    </li>
+                    <li class="aside__list-item ">
+                        <a href="# " class="aside__list-link ">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="aside__list-btn ">
+                    <li class="aside__list-btn-item ">
+                        <button class="aside__btn ">
+              <img src="./img/ic/call.svg" alt=" " class="aside__img-btn " />
+            </button>
+                    </li>
+                    <li class="aside__list-btn-item ">
+                        <button class="aside__btn ">
+              <img src="./img/ic/chat.svg" alt=" " class="aside__img-btn " />
+            </button>
+                    </li>
+                    <li class="aside__list-btn-item ">
+                        <button class="aside__btn ">
+              <img src="./img/ic/profile.svg" alt=" " class="aside__img-btn " />
+            </button>
+                    </li>
+                </ul>
+                <div class="aside__container aside__container--indent">
+                    <a href="# " class="aside__link-mail ">mail@cps.com</a>
+                    <a href="# " class="aside__link-contact ">8 800 890 8900</a>
+                </div>
+                <ul class="aside__list-lang ">
+                    <li class="aside__lang-item ">
+                        <a href="# " class="aside__list-lang-link ">RU</a>
+                    </li>
+                    <li class="aside__lang-item ">
+                        <a href="# " class="aside__list-lang-link ">EN</a>
+                    </li>
+                    <li class="aside__lang-item ">
+                        <a href="# " class="aside__list-lang-link ">CH</a>
+                    </li>
+                </ul>
+            </div>
+    </aside>
+    <section class="modal">
+        <div class=" modal__chat ">
+            <div class="modal__wrapper ">
+                <button class="modal__btn modal__btn--position " data-close>
+                  <img src="./img/ic/close.svg " alt=" " class="modal__btn-img ">
+                </button>
+                <h2 class="modal__title ">Обратная связь</h2>
+                <form action="# " method="post " class="modal__form ">
+                    <input type="text " placeholder="Имя " class="modal__form-name " />
+                    <input type="tel " pattern="\+79[0-9]{9}|8[0-9]{10} " placeholder="Телефон " class="modal__form-tel " />
+                    <input type="email " name=" " placeholder="Электронная почта " class="modal__form-email " />
+                    <textarea name=" " cols="50 " rows="5 " class="modal__form-area " placeholder="Сообщение "></textarea>
+                    <p class="modal__form-info ">
+                        Нажимая “отправить”, вы даете согласие на
+                        <a href=" " class="modal__form-link ">обработку персональных данных</a> и соглашаетесь с нашей
+                        <a href=" " class="modal__form-link ">политикой конфиденциальности</a>
+                    </p>
+                    <button class="modal__form-btn ">Отправить<img src="./img/arrow.svg " alt=" " class="modal__btn-arrow "></button>
+                </form>
+            </div>
+        </div>
+        <div class="modal__call ">
+            <div class="modal__wrapper ">
+                <button class="modal__btn modal__btn--position "><img src="./img/ic/close.svg " alt=" " class="modal__btn-img "></button>
+                <h2 class="modal__title ">Заказать звонок</h2>
+                <form action="# " method="post " class="modal__form ">
+                    <input type="tel " pattern="\+79[0-9]{9}|8[0-9]{10} " placeholder="Телефон " class="modal__form-tel " />
+                    <p class="modal__form-info ">
+                        Нажимая “отправить”, вы даете согласие на
+                        <a href=" " class="modal__form-link ">обработку персональных данных</a> и соглашаетесь с нашей
+                        <a href=" " class="modal__form-link ">политикой конфиденциальности</a>
+                    </p>
+                    <button class="modal__form-btn ">Отправить<img src="./img/arrow.svg " alt=" " class="modal__btn-arrow "></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="wrapper ">
+        <header class="header ">
+            <div class="inner-wrapper ">11</div>
+        </header>
+        <main class="main ">
+            <div class="inner-wrapper ">11</div>
+        </main>
+        <footer class="footer ">
+            <div class="inner-wrapper ">11</div>
+        </footer>
+    </div>
 </body>
+
 </html>
