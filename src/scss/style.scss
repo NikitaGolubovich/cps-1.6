@@ -32,6 +32,7 @@ body {
     background-color: $bgColor;
     color: $text;
     font-size: 1rem;
+    overflow-x: hidden;
 }
 
 @import "../scss/fonts/fonts.scss";

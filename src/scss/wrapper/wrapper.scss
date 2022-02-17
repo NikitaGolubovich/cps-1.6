@@ -2,12 +2,12 @@
     position: relative;
     z-index: 1;
     @media (min-width: 90rem) {
-        left: 20rem;
+        left: 10rem;
     }
 }
 
 .inner-wrapper {
-    margin: 0 2rem;
+    margin: 0 auto;
     max-width: 66.25rem;
     @media (min-width: 48rem) and (max-width: 89.9375rem) {
         margin: 0 1.5rem;
