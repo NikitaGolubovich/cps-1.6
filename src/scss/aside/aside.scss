@@ -5,11 +5,11 @@
     width: 20rem;
     background-color: $bgHeader;
     z-index: 3;
-    transition: all 1s linear;
     transform: translateX(-20rem);
-    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
     &--active {
+        transition: all 1s linear;
         transform: translateX(0);
+        box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
     }
     &__inner-wrapper {
         margin: 0 1.25rem;
@@ -40,13 +40,10 @@
     &__list-item {
         &--active {
             &:before {
-                content: "";
+                content: url('../assets/img/highlight.svg');
                 position: absolute;
-                border-left: 0.25rem solid #41f6d7;
-                border-radius: 0 0.25rem 0.25rem 0;
-                height: 2rem;
                 left: -1.25rem;
-                top: -0.1875rem;
+                top: -6px;
             }
         }
     }

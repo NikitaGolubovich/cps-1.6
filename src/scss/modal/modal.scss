@@ -5,15 +5,18 @@
     background-color: $bgHeader;
     z-index: 3;
     width: 20rem;
-    box-shadow: -0.125rem 0rem 0.25rem rgba(69, 79, 126, 0.02), 1rem 0rem 3.25rem rgba(14, 24, 80, 0.2);
-    transition: all 1s linear;
     transform: translateX(350%);
     height: 100%;
     &--active {
+        transition: all 1s linear;
         transform: translateX(0);
+        box-shadow: -0.125rem 0rem 0.25rem rgba(69, 79, 126, 0.02), 1rem 0rem 3.25rem rgba(14, 24, 80, 0.2);
     }
     &__chat {
         display: none;
+        &--active {
+            display: block;
+        }
     }
     // &__wrapper {}
     // &__btn--position {}
@@ -59,6 +62,9 @@
     }
     &__call {
         display: none;
+        &--active {
+            display: block;
+        }
     }
     &__form-btn {
         background-color: #FF3E79;
