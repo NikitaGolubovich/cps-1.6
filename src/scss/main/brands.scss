@@ -20,7 +20,16 @@
         display: flex;
         gap: 16px;
     }
-    // &__brands-item {}
+    &__brands-item {
+        width: 224px;
+        height: 72px;
+        &--active {
+            display: list-item;
+        }
+        &--visibility {
+            display: none;
+        }
+    }
     &__brands-btn {
         width: 224px;
         height: 72px;
@@ -67,7 +76,11 @@
             flex-wrap: wrap;
         }
     }
-    @media (min-width: 20rem) and (max-width: 47.9375rem) {}
+    @media (min-width: 20rem) and (max-width: 47.9375rem) {
+        &__brands-button {
+            display: none;
+        }
+    }
 }
 
 // .swiper {}

@@ -1,6 +1,8 @@
 $bgColor: #f8f8f8;
 $text: #1b1c21;
 $bgHeader: #ffffff;
+$bullet: #bdbbbb;
+$bulletActive: #b5b6bc;
 *,
 *::before,
 *::after {
@@ -42,3 +44,5 @@ body {
 @import "../scss/main/content.scss";
 @import "../scss/main/brands.scss";
 @import "../scss/footer/footer.scss";
+@import "../scss/swiper/swiper-style.scss";
+@import "../../node_modules/swiper/swiper-bundle.css";
