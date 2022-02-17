@@ -8,6 +8,7 @@
 
 .inner-wrapper {
     margin: 0 2rem;
+    max-width: 66.25rem;
     @media (min-width: 48rem) and (max-width: 89.9375rem) {
         margin: 0 1.5rem;
     }

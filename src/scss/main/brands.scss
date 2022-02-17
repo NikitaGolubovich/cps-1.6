@@ -1,0 +1,76 @@
+.main {
+    &__brands {
+        max-height: 400px;
+        margin-top: 32px;
+    }
+    &__brands-title {
+        padding: 16px 0;
+        font-family: TT Lakes;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        color: #7E7E82;
+        background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
+    }
+    &__brands-container {
+        margin-top: 24px;
+    }
+    &__brands-list {
+        display: flex;
+        gap: 16px;
+    }
+    // &__brands-item {}
+    &__brands-btn {
+        width: 224px;
+        height: 72px;
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        box-sizing: border-box;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    // &__brands-img {}
+    &__brands-btn--active {
+        display: none;
+    }
+    &__brands-button {
+        margin-top: 24px;
+        font-family: TT Lakes;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $text;
+        &:before {
+            content: url('../assets/img/ic/expand.svg');
+            display: inline-block;
+            transform: translateY(0.4375rem);
+        }
+        &--show-more {
+            &:before {
+                transform: rotate(180deg)
+            }
+        }
+    }
+    @media (min-width: 90rem) {
+        &__brands-list {
+            flex-wrap: wrap;
+        }
+    }
+    @media (min-width: 48rem) and (max-width: 89.9375rem) {
+        &__brands-list {
+            flex-wrap: wrap;
+        }
+    }
+    @media (min-width: 20rem) and (max-width: 47.9375rem) {}
+}
+
+// .swiper {}
+// .swiper-wrapper {}
+// .swiper-slide {}
+// .swiper-pagination {}

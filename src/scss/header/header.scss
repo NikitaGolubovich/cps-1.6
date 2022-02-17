@@ -1,7 +1,7 @@
 .header {
     background-color: $bgHeader;
-    max-height: 88px;
-    border-bottom: 1px solid #D9FFF5;
+    max-height: 5.5rem;
+    border-bottom: 0.0625rem solid #D9FFF5;
     &__container {
         display: flex;
         justify-content: space-between;
@@ -14,39 +14,39 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 16px;
+        gap: 1rem;
     }
     &__list-item {
         &:nth-child(4):before {
             content: url('../assets/img/divider.svg');
             display: inline-block;
-            transform: translate(-21px, -2.5px);
+            transform: translate(-1.3125rem, -0.1563rem);
         }
     }
     // &__list-item--visibility {}
-    @media (min-width: 1440px) {
+    @media (min-width: 90rem) {
         display: none;
     }
-    @media (min-width: 768px) and (max-width: 1439px) {
+    @media (min-width: 48rem) and (max-width: 89.9375rem) {
         &__container {
-            gap: 42px;
+            gap: 2.625rem;
         }
         &__btn {
             &--divider:after {
                 content: url('../assets/img/divider.svg');
                 display: inline-block;
-                transform: translate(21px, -2.5px);
+                transform: translate(1.3125rem, -0.1563rem);
             }
         }
         &__list-item {
             &:nth-child(3) {
-                margin-right: 26px;
+                margin-right: 1.625rem;
             }
         }
     }
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 20rem) and (max-width: 47.9375rem) {
         &__container {
-            gap: 16px;
+            gap: 1rem;
         }
         &__list-item--visibility {
             display: none;
@@ -58,5 +58,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 0;
+    padding: 1.125rem 0;
 }
