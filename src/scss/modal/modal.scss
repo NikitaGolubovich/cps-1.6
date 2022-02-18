@@ -7,6 +7,7 @@
     width: 20rem;
     transform: translateX(350%);
     height: 100%;
+    overflow-x: auto;
     &--active {
         transition: all 1s linear;
         transform: translateX(0);
@@ -81,6 +82,11 @@
         line-height: 1.5rem;
         letter-spacing: -0.0094rem;
         text-transform: uppercase;
+        &:after {
+            content: url('../assets/img/arrow.svg');
+            display: inline-block;
+            transform: translate(6px, 4px);
+        }
     }
     @media (min-width: 1440px) {
         &__wrapper {

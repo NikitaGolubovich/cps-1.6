@@ -21,7 +21,7 @@
         gap: 1rem;
     }
     &__repairs-item {
-        width: 14rem;
+        width: 14rem !important;
         height: 10rem;
     }
     &__repairs-btn {
@@ -67,7 +67,7 @@
         }
     }
     @media (min-width: 20rem) and (max-width: 47.9375rem) {
-        &__repairs-btn {
+        &__repairs-button {
             display: none;
         }
     }

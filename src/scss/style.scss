@@ -32,7 +32,7 @@ body {
     background-color: $bgColor;
     color: $text;
     font-size: 1rem;
-    overflow: auto;
+    overflow-x: auto;
     position: relative;
     min-height: 100%;
     @media (min-width: 120rem) {
@@ -50,6 +50,7 @@ body {
 @import "../scss/main/content.scss";
 @import "../scss/main/repairs.scss";
 @import "../scss/main/brands.scss";
+@import "../scss/main/prices.scss";
 @import "../scss/footer/footer.scss";
-// @import "../scss/swiper/swiper-style.scss";
-// @import "../../node_modules/swiper/swiper-bundle.css";
+@import "../scss/swiper/swiper-style.scss";
+@import "../../node_modules/swiper/swiper-bundle.css";
