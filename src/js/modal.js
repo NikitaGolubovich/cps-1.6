@@ -31,3 +31,10 @@ btnCloseCall.addEventListener("click", function() {
     divModal.classList.toggle("modal--active");
     divCall.classList.toggle("modal__call--active");
 });
+
+divOverlay.addEventListener("click", function() {
+    divOverlay.classList.toggle("overlay--index");
+    divModal.classList.toggle("modal--active");
+    divCall.classList.remove("modal__call--active");
+    divChat.classList.remove("modal__chat--active");
+});
