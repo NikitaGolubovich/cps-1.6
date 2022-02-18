@@ -1,15 +1,11 @@
 .header {
     background-color: $bgHeader;
-    max-height: 5.5rem;
-    border-bottom: 0.0625rem solid #D9FFF5;
+    border-bottom: 0.0625rem solid #d9fff5;
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    // &__btn {}
-    // &__btn-img {}
-    // &__logo {}
     &__list {
         display: flex;
         justify-content: space-between;
@@ -18,12 +14,11 @@
     }
     &__list-item {
         &:nth-child(4):before {
-            content: url('../assets/img/divider.svg');
+            content: url("../assets/img/divider.svg");
             display: inline-block;
             transform: translate(-1.3125rem, -0.1563rem);
         }
     }
-    // &__list-item--visibility {}
     @media (min-width: 90rem) {
         display: none;
     }
@@ -33,7 +28,7 @@
         }
         &__btn {
             &--divider:after {
-                content: url('../assets/img/divider.svg');
+                content: url("../assets/img/divider.svg");
                 display: inline-block;
                 transform: translate(1.3125rem, -0.1563rem);
             }

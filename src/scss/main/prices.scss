@@ -1,6 +1,5 @@
 .main {
     &__prices {
-        max-height: 580px;
         margin-top: 2rem;
     }
     &__prices-title {
@@ -10,51 +9,50 @@
         line-height: 1.5rem;
         letter-spacing: -0.0125rem;
         text-transform: uppercase;
-        color: #7E7E82;
+        color: #7e7e82;
         background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
     }
     &__prices-container {
         margin-top: 1.5rem;
     }
-    &__prices-container--visibility {}
     &__prices-list {
         display: flex;
         gap: 1rem;
     }
     &__list-item {
-        width: 260px !important;
-        height: 200px;
-        background: #FFFFFF;
-        border: 0.0625rem solid #EAEAEA;
+        width: 16.25rem !important;
+        height: 12.5rem;
+        background: $bgHeader;
+        border: 0.0625rem solid #eaeaea;
         box-sizing: border-box;
         border-radius: 0.375rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 16px 16px;
+        padding: 1rem 1rem;
     }
     &__list-container {
         font-family: TT Lakes;
-        font-size: 14px;
-        line-height: 18px;
-        letter-spacing: 0.2px;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+        letter-spacing: 0.0125rem;
         color: $text;
         &:last-child {
             display: flex;
             justify-content: space-between;
         }
     }
-    &__list-container-item {}
     &__list-title {
         font-family: TT Lakes;
-        font-size: 14px;
-        line-height: 16px;
-        color: #7E7E82;
+        font-size: 0.875rem;
+        line-height: 1rem;
+        color: #7e7e82;
         mix-blend-mode: normal;
         opacity: 0.72;
     }
-    &__list-btn {
-        background-color: #FF3E79;
+    &__list-btn,
+    &__table-btn {
+        background-color: #ff3e79;
         border-radius: 1rem;
         width: 8.5rem;
         height: 2rem;
@@ -68,17 +66,47 @@
         letter-spacing: -0.0094rem;
         text-transform: uppercase;
         &:after {
-            content: url('../assets/img/arrow.svg');
+            content: url("../assets/img/arrow.svg");
             display: inline-block;
-            transform: translate(6px, 4px);
+            transform: translate(0.375rem, 0.25rem);
+        }
+    }
+    &__table {
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        width: 100%;
+        max-height: 20.25rem;
+        background-color: $bgHeader;
+        border-radius: 0.375rem;
+        border-collapse: collapse;
+    }
+    &__table-row {
+        &:first-child {
+            background-color: $bgColor;
+        }
+    }
+    &__table-item {
+        padding: 1.4375rem;
+        font-family: TT Lakes;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+        letter-spacing: 0.0125rem;
+        color: $text;
+        &--color {
+            font-family: TT Lakes;
+            font-size: 0.875rem;
+            line-height: 1rem;
+            color: #7e7e82;
+            mix-blend-mode: normal;
+            opacity: 0.72;
         }
     }
     &__prices-info {
         margin-top: 1.5rem;
         font-family: TT Lakes;
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0.2px;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.0125rem;
         color: $text;
     }
     &__prices-commercial {
@@ -86,24 +114,27 @@
     }
     &__prices-commercial-link {
         font-family: TT Lakes;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         font-weight: 700;
-        letter-spacing: -0.2px;
+        letter-spacing: -0.0125rem;
         color: $text;
         &:after {
-            content: url('../assets/img/more.svg');
+            content: url("../assets/img/more.svg");
             display: inline-block;
-            transform: translate(6px, 8px);
+            transform: translate(0.375rem, 0.5rem);
         }
     }
-    @media (min-width: 768px) {
+    @media (min-width: 48rem) {
         &__prices-container {
             &--visibility {
                 display: none;
             }
         }
     }
-    // @media (min-width: 48rem) and (max-width: 89.9375rem) {}
-    // @media (min-width: 20rem) and (max-width: 47.9375rem) {}
+    @media (max-width: 47.9375rem) {
+        &__table {
+            display: none;
+        }
+    }
 }

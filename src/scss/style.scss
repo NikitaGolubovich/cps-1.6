@@ -23,8 +23,12 @@ li {
 }
 
 button {
-    background-color: transparent;
+    background-color: inherit;
     cursor: pointer;
+    &:hover {
+        transition: all 0.5s linear;
+        transform: scale(1.01);
+    }
 }
 
 body {
@@ -33,8 +37,8 @@ body {
     color: $text;
     font-size: 1rem;
     overflow-x: auto;
-    position: relative;
-    min-height: 100%;
+    // position: relative;
+    // min-height: 100%;
     @media (min-width: 120rem) {
         overflow-x: hidden;
     }
@@ -46,7 +50,6 @@ body {
 @import "../scss/overlay/overlay.scss";
 @import "../scss/wrapper/wrapper.scss";
 @import "../scss/header/header.scss";
-@import "../scss/main/main.scss";
 @import "../scss/main/content.scss";
 @import "../scss/main/repairs.scss";
 @import "../scss/main/brands.scss";

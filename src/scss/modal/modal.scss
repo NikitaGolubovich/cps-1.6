@@ -3,7 +3,7 @@
     top: 0;
     right: 0;
     background-color: $bgHeader;
-    z-index: 3;
+    z-index: 5;
     width: 20rem;
     transform: translateX(350%);
     height: 100%;
@@ -19,16 +19,11 @@
             display: block;
         }
     }
-    // &__wrapper {}
-    // &__btn--position {}
-    // &__btn {}
-    // &__btn-img {}
     &__title {
         margin-top: 2.5rem;
         font-family: TT Lakes;
         font-size: 1.5rem;
         line-height: 2rem;
-        /* identical to box height, or 133% */
         letter-spacing: -0.0375rem;
         color: $text;
         font-weight: 700;
@@ -43,23 +38,23 @@
     &__form-tel,
     &__form-email,
     &__form-area {
-        border: 0.0625rem solid #EAEAEA;
+        border: 0.0625rem solid #eaeaea;
         border-radius: 0.5rem;
         padding: 1rem 0.75rem;
         font-family: TT Lakes;
         font-size: 1rem;
         line-height: 1.5rem;
         letter-spacing: -0.0125rem;
-        color: #B5B6BC;
+        color: #b5b6bc;
     }
     &__form-info {
         font-family: TT Lakes;
         font-size: 0.875rem;
         line-height: 1rem;
-        color: #7E7E82;
+        color: #7e7e82;
     }
     &__form-link {
-        color: #FF3E79;
+        color: #ff3e79;
     }
     &__call {
         display: none;
@@ -68,7 +63,7 @@
         }
     }
     &__form-btn {
-        background-color: #FF3E79;
+        background-color: #ff3e79;
         border-radius: 1rem;
         width: 8.5rem;
         height: 2rem;
@@ -83,19 +78,17 @@
         letter-spacing: -0.0094rem;
         text-transform: uppercase;
         &:after {
-            content: url('../assets/img/arrow.svg');
+            content: url("../assets/img/arrow.svg");
             display: inline-block;
-            transform: translate(6px, 4px);
+            transform: translate(0.375rem, 0.25rem);
+        }
+        &__wrapper {
+            position: relative;
         }
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 90rem) {
         &__wrapper {
             margin: 0 1.875rem;
-        }
-        &__btn--position {
-            position: absolute;
-            left: -4.0625rem;
-            top: 0.625rem;
         }
         &__chat {
             margin-top: 2.5rem;
@@ -105,13 +98,15 @@
         }
         &__title {
             &:before {
-                content: url('../assets/img/highlight.svg');
-                display: inline-block;
-                transform: translate(-1.875rem, 0.625rem);
+                content: url("../assets/img/highlight.svg");
+                position: absolute;
+                display: block;
+                left: 0;
+                top: 7.5rem;
             }
         }
     }
-    @media (min-width: 20rem) and (max-width: 89.9375rem) {
+    @media (min-width: 320px) and (max-width: 1439px) {
         &__wrapper {
             margin: 0 1rem;
         }
@@ -123,9 +118,10 @@
         }
         &__title {
             &:before {
-                content: url('../assets/img/highlight.svg');
-                display: inline-block;
-                transform: translate(-1rem, 0.625rem);
+                content: url("../assets/img/highlight.svg");
+                position: absolute;
+                left: 0;
+                top: 6.5625rem;
             }
         }
     }

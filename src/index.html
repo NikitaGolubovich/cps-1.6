@@ -16,7 +16,7 @@
         <div class="aside__inner-wrapper">
             <div class="aside__header">
                 <div class="aside__container">
-                    <button class="aside__btn aside__btn--visibility">
+                    <button class="aside__btn aside__btn--visibility close">
               <img
                 src="./img/ic/close.svg"
                 alt=" "
@@ -29,15 +29,15 @@
           </button>
                 </div>
                 <ul class="aside__list">
+                    <li class="aside__list-item">
+                        <a href="# " class="aside__list-link">Ремонт техники</a>
+                    </li>
                     <li class="aside__list-item aside__list-item--active">
-                        <a href="# " class="aside__list-link aside__list-link--gray">Ремонт техники</a
+                        <a href="# " class="aside__list-link aside__list-link--gray">Услуги и сервисы</a
             >
           </li>
           <li class="aside__list-item">
-            <a href="# " class="aside__list-link">Услуги и сервисы</a>
-                    </li>
-                    <li class="aside__list-item">
-                        <a href="# " class="aside__list-link">Корпоративным клиентам</a>
+            <a href="# " class="aside__list-link">Корпоративным клиентам</a>
                     </li>
                     <li class="aside__list-item">
                         <a href="# " class="aside__list-link">Продавцам техники</a>
@@ -57,12 +57,12 @@
                 </ul>
                 <ul class="aside__list-btn">
                     <li class="aside__list-btn-item">
-                        <button class="aside__btn">
+                        <button class="aside__btn phone">
               <img src="./img/ic/call.svg" alt=" " class="aside__img-btn" />
             </button>
                     </li>
                     <li class="aside__list-btn-item">
-                        <button class="aside__btn">
+                        <button class="aside__btn chat">
               <img src="./img/ic/chat.svg" alt=" " class="aside__img-btn" />
             </button>
                     </li>
@@ -93,10 +93,10 @@
     <section class="modal">
         <div class="modal__chat">
             <div class="modal__wrapper">
-                <button class="modal__btn modal__btn--position" data-close>
+                <button class="modal__btn modal__btn--position close-chat">
             <img src="./img/ic/close.svg " alt=" " class="modal__btn-img" />
           </button>
-                <h2 class="modal__title">Обратная связь</h2>
+                <h2 class="modal__title modal__title-close">Обратная связь</h2>
                 <form action="# " method="post " class="modal__form">
                     <input type="text " placeholder="Имя " class="modal__form-name" />
                     <input type="tel " pattern="\+79[0-9]{9}|8[0-9]{10} " placeholder="Телефон " class="modal__form-tel" />
@@ -111,18 +111,16 @@
                 >политикой конфиденциальности</a
               >
             </p>
-            <button class="modal__form-btn">
-              Отправить
-            </button>
+            <button class="modal__form-btn">Отправить</button>
           </form>
         </div>
       </div>
       <div class="modal__call">
         <div class="modal__wrapper">
-          <button class="modal__btn modal__btn--position">
+          <button class="modal__btn modal__btn--position close-call">
             <img src="./img/ic/close.svg " alt=" " class="modal__btn-img" />
           </button>
-          <h2 class="modal__title">Заказать звонок</h2>
+          <h2 class="modal__title modal__title-close">Заказать звонок</h2>
           <form action="# " method="post " class="modal__form">
             <input
               type="tel "
@@ -140,9 +138,7 @@
                 >политикой конфиденциальности</a
               >
             </p>
-            <button class="modal__form-btn">
-              Отправить
-            </button>
+            <button class="modal__form-btn">Отправить</button>
           </form>
         </div>
       </div>
@@ -153,7 +149,7 @@
       <header class="header">
         <div class="inner-wrapper inner-wrapper--display">
           <div class="header__container">
-            <button class="header__btn header__btn--divider">
+            <button class="header__btn header__btn--divider burger">
               <img
                 src="./img/ic/burger.svg"
                 alt=""
@@ -501,53 +497,157 @@
           </section>
           <!-- Prices -->
           <section class="main__prices">
-            <!-- start -->
+            <!-- blocks ul -->
             <h3 class="main__prices-title">Цены на услуги</h3>
-            <div class="main__prices-container swiper main__prices-container--visibility">
+            <div
+              class="main__prices-container swiper main__prices-container--visibility"
+            >
               <ul class="main__prices-list swiper-wrapper">
                 <li class="main__list-item swiper-slide">
-                  <div class="main__list-container"><h4 class="main__list-title">Ремонтные услуги</h4>Тестирование с выдачей<br>технического заключения</div>
-                  <div class="main__list-container"><h4 class="main__list-title">Цена</h4>1 000 ₽</div>
                   <div class="main__list-container">
-                    <div class="main__list-container-item"><h4 class="main__list-title">Срок</h4>30-120 мин</div>
+                    <h4 class="main__list-title">Ремонтные услуги</h4>
+                    Тестирование с выдачей<br />технического заключения
+                  </div>
+                  <div class="main__list-container">
+                    <h4 class="main__list-title">Цена</h4>
+                    1 000 ₽
+                  </div>
+                  <div class="main__list-container">
+                    <div class="main__list-container-item">
+                      <h4 class="main__list-title">Срок</h4>
+                      30-120 мин
+                    </div>
                     <button class="main__list-btn">Заказать</button>
                   </div>
                 </li>
                 <li class="main__list-item swiper-slide">
-                  <div class="main__list-container"><h4 class="main__list-title">Ремонтные услуги</h4>Тестирование с выдачей<br>технического заключения</div>
-                  <div class="main__list-container"><h4 class="main__list-title">Цена</h4>1 000 ₽</div>
                   <div class="main__list-container">
-                    <div class="main__list-container-item"><h4 class="main__list-title">Срок</h4>30-120 мин</div>
+                    <h4 class="main__list-title">Ремонтные услуги</h4>
+                    Диагностика
+                  </div>
+                  <div class="main__list-container">
+                    <h4 class="main__list-title">Цена</h4>
+                    Бесплатно
+                  </div>
+                  <div class="main__list-container">
+                    <div class="main__list-container-item">
+                      <h4 class="main__list-title">Срок</h4>
+                      30 мин
+                    </div>
                     <button class="main__list-btn">Заказать</button>
                   </div>
                 </li>
                 <li class="main__list-item swiper-slide">
-                  <div class="main__list-container"><h4 class="main__list-title">Ремонтные услуги</h4>Тестирование с выдачей<br>технического заключения</div>
-                  <div class="main__list-container"><h4 class="main__list-title">Цена</h4>1 000 ₽</div>
                   <div class="main__list-container">
-                    <div class="main__list-container-item"><h4 class="main__list-title">Срок</h4>30-120 мин</div>
+                    <h4 class="main__list-title">Ремонтные услуги</h4>
+                    Замена дисплея
+                  </div>
+                  <div class="main__list-container">
+                    <h4 class="main__list-title">Цена</h4>
+                    1 000 ₽
+                  </div>
+                  <div class="main__list-container">
+                    <div class="main__list-container-item">
+                      <h4 class="main__list-title">Срок</h4>
+                      30-120 мин
+                    </div>
                     <button class="main__list-btn">Заказать</button>
                   </div>
                 </li>
                 <li class="main__list-item swiper-slide">
-                  <div class="main__list-container"><h4 class="main__list-title">Ремонтные услуги</h4>Тестирование с выдачей<br>технического заключения</div>
-                  <div class="main__list-container"><h4 class="main__list-title">Цена</h4>1 000 ₽</div>
                   <div class="main__list-container">
-                    <div class="main__list-container-item"><h4 class="main__list-title">Срок</h4>30-120 мин</div>
+                    <h4 class="main__list-title">Ремонтные услуги</h4>
+                    Замена полифонического динамика
+                  </div>
+                  <div class="main__list-container">
+                    <h4 class="main__list-title">Цена</h4>
+                    1 000 ₽
+                  </div>
+                  <div class="main__list-container">
+                    <div class="main__list-container-item">
+                      <h4 class="main__list-title">Срок</h4>
+                      30-120 мин
+                    </div>
                     <button class="main__list-btn">Заказать</button>
                   </div>
                 </li>
                 <li class="main__list-item swiper-slide">
-                  <div class="main__list-container"><h4 class="main__list-title">Ремонтные услуги</h4>Тестирование с выдачей<br>технического заключения</div>
-                  <div class="main__list-container"><h4 class="main__list-title">Цена</h4>1 000 ₽</div>
                   <div class="main__list-container">
-                    <div class="main__list-container-item"><h4 class="main__list-title">Срок</h4>30-120 мин</div>
+                    <h4 class="main__list-title">Ремонтные услуги</h4>
+                    Замена программного обеспечения
+                  </div>
+                  <div class="main__list-container">
+                    <h4 class="main__list-title">Цена</h4>
+                    1 000 ₽
+                  </div>
+                  <div class="main__list-container">
+                    <div class="main__list-container-item">
+                      <h4 class="main__list-title">Срок</h4>
+                      30-120 мин
+                    </div>
                     <button class="main__list-btn">Заказать</button>
                   </div>
                 </li>
               </ul>
               <div class="swiper-pagination"></div>
             </div>
+            <!-- table -->
+            <table class="main__table">
+              <tr class="main__table-row">
+                <td class="main__table-item main__table-item--color">
+                  Ремонтные услуги
+                </td>
+                <td class="main__table-item main__table-item--color">Цена</td>
+                <td class="main__table-item main__table-item--color">Срок</td>
+                <td class="main__table-item main__table-item--color"></td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-item">Диагностика</td>
+                <td class="main__table-item">Бесплатно</td>
+                <td class="main__table-item">30 мин</td>
+                <td class="main__table-item">
+                  <button class="main__table-btn">Заказать</button>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-item">Замена дисплея</td>
+                <td class="main__table-item">1 000 ₽</td>
+                <td class="main__table-item">30-120 мин</td>
+                <td class="main__table-item">
+                  <button class="main__table-btn">Заказать</button>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-item">
+                  Замена полифонического динамика
+                </td>
+                <td class="main__table-item">1 000 ₽</td>
+                <td class="main__table-item">30-120 мин</td>
+                <td class="main__table-item">
+                  <button class="main__table-btn">Заказать</button>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-item">
+                  Тестирование с выдачей технического заключения
+                </td>
+                <td class="main__table-item">1 000 ₽</td>
+                <td class="main__table-item">30-120 мин</td>
+                <td class="main__table-item">
+                  <button class="main__table-btn">Заказать</button>
+                </td>
+              </tr>
+              <tr class="main__table-row">
+                <td class="main__table-item">
+                  Замена программного обеспечения
+                </td>
+                <td class="main__table-item">1 000 ₽</td>
+                <td class="main__table-item">30-120 мин</td>
+                <td class="main__table-item">
+                  <button class="main__table-btn">Заказать</button>
+                </td>
+              </tr>
+            </table>
             <p class="main__prices-info">
               Все цены указаны с учетом НДС. Стоимость ремонта указана на
               единичную услугу. Для получения коммерческого предложения на
@@ -558,13 +658,26 @@
                 >Получить коммерческое предложение</a
               >
             </div>
-            <!-- end -->
           </section>
         </div>
       </main>
       <!-- FOOTER -->
       <footer class="footer">
-        <div class="inner-wrapper">11</div>
+        <div class="inner-wrapper">
+          <div class="footer__content">
+            <p class="footer__text">
+              © 2019 CPS <br />
+              Разработано командой Apesong
+            </p>
+            <a href="" class="footer__link" data-tab
+              >Политика конфиденциальности</a
+            >
+            <p class="footer__text">
+              Информация, размещенная на данной странице, не является публичной
+              офертой
+            </p>
+          </div>
+        </div>
       </footer>
     </div>
   </body>

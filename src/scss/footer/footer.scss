@@ -1,0 +1,34 @@
+.footer {
+    &__content {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text,
+    &__link {
+        font-family: TT Lakes;
+        font-size: 0.875rem;
+        line-height: 1rem;
+        color: #7e7e82;
+        mix-blend-mode: normal;
+        opacity: 0.72;
+    }
+    @media (min-width: 90rem) {
+        &__content {
+            gap: 9.0625rem;
+        }
+    }
+    @media (min-width: 48rem) and (max-width: 89.9375rem) {
+        &__content {
+            gap: 2.5rem;
+        }
+    }
+    @media (min-width: 20rem) and (max-width: 47.9375rem) {
+        &__content {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+    }
+}
