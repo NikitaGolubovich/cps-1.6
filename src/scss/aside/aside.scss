@@ -1,11 +1,13 @@
 .aside {
-    position: absolute;
-    top: 0;
+    position: fixed;
     left: 0;
+    top: 0;
     width: 20rem;
+    height: 100%;
     background-color: $bgHeader;
     z-index: 3;
     transform: translateX(-20rem);
+    overflow: auto;
     &--active {
         transition: all 1s linear;
         transform: translateX(0);
@@ -13,6 +15,8 @@
     }
     &__inner-wrapper {
         margin: 0 1.25rem;
+        display: flex;
+        flex-direction: column;
     }
     &__header {
         display: flex;
@@ -93,7 +97,7 @@
         gap: 0.75rem;
     }
     &__list-lang {
-        margin-top: 2.5rem;
+        margin-top: 0.5rem;
         display: flex;
         gap: 0.4375rem;
     }

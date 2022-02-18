@@ -1,4 +1,4 @@
 import '../scss/style.scss';
-import "../js/swiper.js";
+// import "../js/swiper.js";
 
 console.log('Works!');

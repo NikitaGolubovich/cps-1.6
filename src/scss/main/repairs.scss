@@ -1,9 +1,9 @@
 .main {
-    &__brands {
-        max-height: 25rem;
+    &__repairs {
+        max-height: 48rem;
         margin-top: 2rem;
     }
-    &__brands-title {
+    &__repairs-title {
         padding: 1rem 0;
         font-family: TT Lakes;
         font-size: 1rem;
@@ -13,40 +13,40 @@
         color: #7E7E82;
         background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
     }
-    &__brands-container {
+    &__repairs-container {
         margin-top: 1.5rem;
     }
-    &__brands-list {
+    &__repairs-list {
         display: flex;
         gap: 1rem;
     }
-    &__brands-item {
+    &__repairs-item {
         width: 14rem;
-        height: 4.5rem;
-        &--active {
-            display: list-item;
-        }
-        &--visibility {
-            display: none;
-        }
+        height: 10rem;
     }
-    &__brands-btn {
+    &__repairs-btn {
         width: 14rem;
-        height: 4.5rem;
+        height: 10rem;
         background: #FFFFFF;
         border: 0.0625rem solid #EAEAEA;
         box-sizing: border-box;
         border-radius: 0.375rem;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         padding: 1rem;
+        display: flex;
+        font-family: TT Lakes;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        letter-spacing: -0.0125rem;
+        color: $text;
     }
-    // &__brands-img {}
-    &__brands-btn--active {
-        display: none;
+    &__repairs-arrow {
+        margin-top: 5.625rem;
     }
-    &__brands-button {
+    &__repairs-button {
         margin-top: 1.5rem;
         font-family: TT Lakes;
         font-style: normal;
@@ -66,24 +66,9 @@
             }
         }
     }
-    @media (min-width: 90rem) {
-        &__brands-list {
-            flex-wrap: wrap;
-        }
-    }
-    @media (min-width: 48rem) and (max-width: 89.9375rem) {
-        &__brands-list {
-            flex-wrap: wrap;
-        }
-    }
     @media (min-width: 20rem) and (max-width: 47.9375rem) {
-        &__brands-button {
+        &__repairs-btn {
             display: none;
         }
     }
 }
-
-// .swiper {}
-// .swiper-wrapper {}
-// .swiper-slide {}
-// .swiper-pagination {}
