@@ -41,12 +41,14 @@
         position: relative;
     }
     &__list-item {
-        &--active {
+        position: relative;
+        &:hover {
             &:before {
                 content: url('../assets/img/highlight.svg');
                 position: absolute;
-                left: -1.25rem;
-                top: 2.8125rem;
+                display: inline-block;
+                left: -1.225rem;
+                top: -0.5rem;
             }
         }
     }
@@ -59,8 +61,9 @@
         letter-spacing: -0.0125rem;
         color: $text;
         font-weight: 500;
-        &--gray {
+        &:hover {
             color: #7E7E82;
+            transition: all 0.5s linear;
         }
     }
     &__list-btn {

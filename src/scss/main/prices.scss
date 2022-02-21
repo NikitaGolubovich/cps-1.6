@@ -81,6 +81,7 @@
         border-collapse: collapse;
     }
     &__table-row {
+        border-bottom: 0.0625rem solid #EAEAEA;
         &:first-child {
             background-color: $bgColor;
         }

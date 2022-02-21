@@ -33,8 +33,11 @@ btnCloseCall.addEventListener("click", function() {
 });
 
 divOverlay.addEventListener("click", function() {
-    divOverlay.classList.toggle("overlay--index");
-    divModal.classList.toggle("modal--active");
+    divOverlay.classList.remove("overlay--index");
+    divOverlay.classList.remove("overlay--opacity");
+    divAside.classList.remove("aside--active");
+    divModal.classList.remove("modal--active");
     divCall.classList.remove("modal__call--active");
     divChat.classList.remove("modal__chat--active");
+
 });
