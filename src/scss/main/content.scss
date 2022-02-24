@@ -39,7 +39,6 @@
         white-space: nowrap;
         text-align: center;
         vertical-align: middle;
-        padding: 0.5rem 1.25rem;
         font-family: TT Lakes;
         font-size: 1rem;
         line-height: 1.5rem;
@@ -47,7 +46,8 @@
         color: #7e7e82;
         transition: all 0.2s linear;
         height: 2.5rem;
-        &:hover {
+        width: 13.125rem;
+        &:focus {
             background-color: $bgHeader;
             border-radius: 0.375rem;
             border: 0.125rem solid #b8ffec;
@@ -69,9 +69,15 @@
     }
     &__text--visibility {
         display: none;
+        &-active {
+            display: block;
+        }
     }
     &__text-span {
         display: none;
+        &--active {
+            display: inline;
+        }
     }
     &__text-btn {
         margin-top: 1rem;
@@ -85,6 +91,11 @@
             content: url("../assets/img/ic/expand.svg");
             display: inline-block;
             transform: translateY(0.4375rem);
+        }
+        &--show-more {
+            &:before {
+                transform: rotate(180deg);
+            }
         }
     }
     // &__text-img {}

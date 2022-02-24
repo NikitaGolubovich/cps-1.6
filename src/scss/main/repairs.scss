@@ -22,6 +22,12 @@
     &__repairs-item {
         width: 14rem !important;
         height: 10rem;
+        &--visibility {
+            display: none;
+            &-active {
+                display: block;
+            }
+        }
     }
     &__repairs-btn {
         width: 14rem;
@@ -68,6 +74,11 @@
     @media (min-width: 20rem) and (max-width: 47.9375rem) {
         &__repairs-button {
             display: none;
+        }
+    }
+    @media (min-width: 48rem) {
+        &__repairs-list {
+            flex-wrap: wrap;
         }
     }
 }
